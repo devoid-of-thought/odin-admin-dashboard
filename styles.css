@@ -100,12 +100,147 @@ body {
     grid-area: header;
 }
 .sidebar{
-    display:flex;
+    display:grid;
+    grid-template-rows: 10% 40% 20%;
+    grid-template-rows: repeat(3,min-content);
+
+    grid-template-areas: "logo"
+                         "main-menu"
+                         "settings-container";
     background-color: var(--primary-color);
     grid-area: sidebar;
+    gap: 50px
 }
+.logo{
+    grid-area: logo;
+    display: grid;
+    grid-template-rows: repeat(1,min-content);
+
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "logo-icon logo-flavor";
+    align-items: center;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.logo h1{
+    grid-area: logo-flavor;
+}
+.main-menu{
+    grid-area:main-menu;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: repeat(6,min-content);
+    grid-template-areas: "home-icon home-flavor"
+                         "profile-icon profile-flavor"
+                         "messages-icon messages-flavor"
+                         "history-icon history-flavor"
+                         "tasks-icon tasks-flavor"
+                         "communities-icon communities-flavor";
+    align-items: center;
+    justify-content: left;
+    margin-left: 40px;
+
+    gap: 10px;
+}
+.main-menu-icon:nth-of-type(1){
+    grid-area: home-icon;
+}
+.main-menu-flavor:nth-of-type(1){
+    grid-area:  home-flavor;
+}
+.main-menu-icon:nth-of-type(2){
+    grid-area: profile-icon;
+}
+.main-menu-flavor:nth-of-type(2){
+    grid-area:  profile-flavor;
+}
+.main-menu-icon:nth-of-type(3){
+    grid-area: messages-icon;
+}
+.main-menu-flavor:nth-of-type(3){
+    grid-area:  messages-flavor;
+}
+.main-menu-icon:nth-of-type(4){
+    grid-area: history-icon;
+}
+.main-menu-flavor:nth-of-type(4){
+    grid-area:  history-flavor;
+}
+.main-menu-icon:nth-of-type(5){
+    grid-area: tasks-icon;
+}
+.main-menu-flavor:nth-of-type(5){
+    grid-area:  tasks-flavor;
+}
+.main-menu-icon:nth-of-type(6){
+    grid-area: communities-icon;
+}
+.main-menu-flavor:nth-of-type(6){
+    grid-area:  communities-flavor;
+}
+.settings-container{
+    grid-area: settings-container;
+        display: grid;
+    grid-template-columns: max-content max-content;
+        grid-template-rows: repeat(3,min-content);
+
+    grid-template-areas: "settings-icon settings-flavor"
+                         "help-icon help-flavor"
+                         "privacy-icon privacy-flavor";
+    align-items: center;
+    justify-content: left;
+    margin-left: 40px;
+    gap:10px;
+}
+.main-menu-flavor,
+.settings-flavor{
+    font-size: 24px;
+}
+.logo h1{
+    font-size: 36px;
+}
+.settings-icon:nth-of-type(1){
+    grid-area: settings-icon;
+}
+.settings-flavor:nth-of-type(1){
+    grid-area:  settings-flavor;
+}
+.settings-icon:nth-of-type(2){
+    grid-area: help-icon;
+}
+.settings-flavor:nth-of-type(2){
+    grid-area:  help-flavor;
+}
+.settings-icon:nth-of-type(3){
+    grid-area: privacy-icon;
+}
+.settings-flavor:nth-of-type(3){
+    grid-area:  privacy-flavor;
+}   
+
 .main-area {
     background-color: var(--far-background-color);
     grid-area: main-area
 }
 
+.main-menu-icon,
+.logo-icon,
+.settings-icon {
+    filter: invert(99%) sepia(40%) saturate(78%) hue-rotate(278deg) brightness(115%) contrast(87%);;
+}
+.logo-icon{
+    width: 80px;
+    height: 80px;
+    grid-area: logo-icon;
+}
+.main-menu-icon,
+.settings-icon {
+    width: 30px;
+    height: 30px;
+}
+.main-menu-flavor,
+.settings-flavor,.logo h1 {
+    color: var(--close-background-color);
+}
