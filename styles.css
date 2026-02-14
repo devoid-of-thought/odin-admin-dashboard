@@ -75,7 +75,7 @@ h6 {
 }
 
 :root {
-    font-size: 16px;
+  font-size: 16px;
   --far-background-color: #cccccc;
   --close-background-color: #eeeeee;
   --primary-color: #020100;
@@ -84,7 +84,7 @@ h6 {
 }
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
@@ -114,7 +114,6 @@ body {
   grid-template-columns: 3fr 1fr;
   grid-template-areas: "search-container user-profile-container";
   gap: 2rem;
-
 }
 .header-container-2 {
   grid-area: header-container-2;
@@ -126,56 +125,56 @@ body {
 .search-container {
   grid-area: search-container;
   display: flex;
-  gap:1rem;
+  gap: 1rem;
 }
 .search-container input {
   width: 70%;
-    height: 2rem;
+  height: 2rem;
   padding: 0.5rem;
   border: 2px solid var(--primary-color);
-    border-radius: 2rem;
+  border-radius: 2rem;
 }
 
 .user-profile-container {
   grid-area: user-profile-container;
   display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap:2rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
 }
 .user-profile-container .user-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 .actions-container .action-btn {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%; 
-    height: 50%;
-    color: var(--close-background-color);
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    border-radius: 2rem;
-    border: 1px solid var(--primary-color);
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50%;
+  color: var(--close-background-color);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  border: 1px solid var(--primary-color);
 }
 .user-greeting-container {
   grid-area: user-greeting-container;
   display: flex;
-      justify-content: flex-start;
-    align-items: center;
-    gap:2rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
 }
 .actions-container {
   grid-area: actions-container;
   display: flex;
-        justify-content: space-around;
-    align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .sidebar {
@@ -191,18 +190,18 @@ body {
   grid-area: sidebar;
   gap: 3rem;
 }
-.user-profile-image{
-    border: 2px solid var(--primary-color);
+.user-profile-image {
+  border: 2px solid var(--primary-color);
 }
-.user-profile-container .user-profile-image{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
+.user-profile-container .user-profile-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
 }
-.user-greeting-container .user-profile-image{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
+.user-greeting-container .user-profile-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
 }
 .logo {
   grid-area: logo;
@@ -316,8 +315,128 @@ body {
 .main-area {
   background-color: var(--far-background-color);
   grid-area: main-area;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+grid-template-rows: min-content min-content;  
+grid-template-areas:
+    " my-projects announcements"
+    "my-projects trending";
+}
+.my-projects {
+  grid-area: my-projects;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+.announcements {
+  grid-area: announcements;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+.trending {
+  grid-area: trending;
+    display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+.trending-profile{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.trending-card {
+  background-color: var(--close-background-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem ;
+}
+.trending-profile-name{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
+.trending-profile-flavor{
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    opacity: 80%;
+}
+.my-projects .card {
+  background-color: var(--close-background-color);
+  border-left: 0.5rem solid var(--secondary-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.avatar-placeholder {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--primary-color);
+    color: var(--close-background-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.announcement-card {
+  background-color: var(--close-background-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.announcement-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.announcement-flavor {
+    font-size: 0.875rem;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 4px solid var(--accent-color);
+}
+.announcement-flavor:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.card-icons {
+  display: flex;
+  align-self: flex-end;
+  gap: 1rem;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.title-container {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
 .main-menu-icon,
 .logo-icon,
 .settings-icon {
@@ -331,7 +450,8 @@ body {
 }
 .main-menu-icon,
 .settings-icon,
-.header-icon {
+.header-icon,
+.card-icons img {
   width: 2rem;
   height: 2rem;
 }

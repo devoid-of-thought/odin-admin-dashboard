@@ -5,66 +5,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="header">
       <div class="header-container-1">
         <div class="search-container">
-            <img src="icons/magnify.svg" alt="magnifying glass icon" class="header-icon"/>
-            <input type="search" name="search-bar" id="search-bar" />
+          <img
+            src="icons/magnify.svg"
+            alt="magnifying glass icon"
+            class="header-icon"
+          />
+          <input type="search" name="search-bar" id="search-bar" />
         </div>
         <div class="user-profile-container">
-            <img src="icons/bell.svg" alt="bell icon" class="header-icon"/>
-            <img src="images/user_profile.png" alt="user profile image" class="user-profile-image"/>
-            <p class="user-name">Devoid of Thought</p>
+          <img src="icons/bell.svg" alt="bell icon" class="header-icon" />
+          <img
+            src="images/user_profile.png"
+            alt="user profile image"
+            class="user-profile-image"
+          />
+          <p class="user-name">Devoid of Thought</p>
         </div>
       </div>
       <div class="header-container-2">
         <div class="user-greeting-container">
-            <img src="images/user_profile.png" alt="user profile image" class="user-profile-image"/>
-            <div class="user-greeting">
-                <h4>Hello there,</h4>
-                <h2>Devoid of Thought (@devoid-of-thought)</h2>
-            </div>
+          <img
+            src="images/user_profile.png"
+            alt="user profile image"
+            class="user-profile-image"
+          />
+          <div class="user-greeting">
+            <h4>Hello there,</h4>
+            <h2>Devoid of Thought (@devoid-of-thought)</h2>
+          </div>
         </div>
         <div class="actions-container">
-            <input type="button" class="action-btn" value="New">
-            <input type="button" class="action-btn" value="Upload">
-            <input type="button" class="action-btn" value="Share">
+          <input type="button" class="action-btn" value="New" />
+          <input type="button" class="action-btn" value="Upload" />
+          <input type="button" class="action-btn" value="Share" />
         </div>
       </div>
     </div>
     <div class="sidebar">
-        <div class="logo">
-            <img src="icons/view-dashboard.svg" alt="logo icon" class="logo-icon">
-            <h1>Dashboard</h1>
-        </div>
-        <div class="main-menu">
-            <img src="icons/home.svg" alt="home icon" class="main-menu-icon">
-            <p class="main-menu-flavor">Home</p>
-            <img src="icons/card-account-details-outline.svg" alt="profile icon" class="main-menu-icon">
-            <p class="main-menu-flavor">Profile</p>
-            <img src="icons/message.svg" alt="messages icon" class="main-menu-icon">
-            <p class="main-menu-flavor">Messages    </p>
-            <img src="icons/clock-outline.svg" alt="history icon" class="main-menu-icon">
-            <p class="main-menu-flavor">History</p>
-            <img src="icons/note-multiple.svg" alt="messages icon" class="main-menu-icon">
-            <p class="main-menu-flavor">Messages</p>
-            <img src="icons/account-group.svg" alt="communities icon" class="main-menu-icon">
-            <p class="main-menu-flavor">Communities</p>
-        </div>
-        <div class="settings-container">
-            <img src="icons/cog.svg" alt="settings icon" class="settings-icon">
-            <p class="settings-flavor">Settings</p>
-            <img src="icons/help-box.svg" alt="support icon" class="settings-icon">
-            <p class="settings-flavor">Support</p>
-            <img src="icons/shield-check.svg" alt="privacy icon" class="settings-icon">
-            <p class="settings-flavor">Privacy</p>
-        </div>
+      <div class="logo">
+        <img src="icons/view-dashboard.svg" alt="logo icon" class="logo-icon" />
+        <h1>Dashboard</h1>
+      </div>
+      <div class="main-menu">
+        <img src="icons/home.svg" alt="home icon" class="main-menu-icon" />
+        <p class="main-menu-flavor">Home</p>
+        <img
+          src="icons/card-account-details-outline.svg"
+          alt="profile icon"
+          class="main-menu-icon"
+        />
+        <p class="main-menu-flavor">Profile</p>
+        <img
+          src="icons/message.svg"
+          alt="messages icon"
+          class="main-menu-icon"
+        />
+        <p class="main-menu-flavor">Messages</p>
+        <img
+          src="icons/clock-outline.svg"
+          alt="history icon"
+          class="main-menu-icon"
+        />
+        <p class="main-menu-flavor">History</p>
+        <img
+          src="icons/note-multiple.svg"
+          alt="messages icon"
+          class="main-menu-icon"
+        />
+        <p class="main-menu-flavor">Messages</p>
+        <img
+          src="icons/account-group.svg"
+          alt="communities icon"
+          class="main-menu-icon"
+        />
+        <p class="main-menu-flavor">Communities</p>
+      </div>
+      <div class="settings-container">
+        <img src="icons/cog.svg" alt="settings icon" class="settings-icon" />
+        <p class="settings-flavor">Settings</p>
+        <img
+          src="icons/help-box.svg"
+          alt="support icon"
+          class="settings-icon"
+        />
+        <p class="settings-flavor">Support</p>
+        <img
+          src="icons/shield-check.svg"
+          alt="privacy icon"
+          class="settings-icon"
+        />
+        <p class="settings-flavor">Privacy</p>
+      </div>
     </div>
-    <div class="main-area">a</div>
+    <div class="main-area">
+      <div class="my-projects">
+        <p class="title-container">Your Projects</p>
+        <div class="cards-container">
+          <div class="card">
+            <p class="card-title">Project 1</p>
+            <p class="card-flavor">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              rutrum ex vel felis consectetur, ac bibendum massa cursus.
+              Vestibulum urna dui, varius consequat gravida a, porta vitae ex.
+              Nunc sed nibh in sapien convallis ornare sit amet sed ante. Nam
+              quis nisl in est tincidunt egestas.
+            </p>
+            <div class="card-icons">
+              <img src="icons/eye-plus-outline.svg" alt="view project icon " />
+              <img src="icons/share.svg" alt="share project icon" />
+              <img src="icons/star-plus-outline.svg" alt="star project icon" />
+            </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Project 2</p>
+            <p class="card-flavor">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              rutrum ex vel felis consectetur, ac bibendum massa cursus.
+              Vestibulum urna dui, varius consequat gravida a, porta vitae ex.
+              Nunc sed nibh in sapien convallis ornare sit amet sed ante. Nam
+              quis nisl in est tincidunt egestas.
+            </p>
+            <div class="card-icons">
+              <img src="icons/eye-plus-outline.svg" alt="view project icon " />
+              <img src="icons/share.svg" alt="share project icon" />
+              <img src="icons/star-plus-outline.svg" alt="star project icon" />
+            </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Project 3</p>
+            <p class="card-flavor">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              rutrum ex vel felis consectetur, ac bibendum massa cursus.
+              Vestibulum urna dui, varius consequat gravida a, porta vitae ex.
+              Nunc sed nibh in sapien convallis ornare sit amet sed ante. Nam
+              quis nisl in est tincidunt egestas.
+            </p>
+            <div class="card-icons">
+              <img src="icons/eye-plus-outline.svg" alt="view project icon " />
+              <img src="icons/share.svg" alt="share project icon" />
+              <img src="icons/star-plus-outline.svg" alt="star project icon" />
+            </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Project 4</p>
+            <p class="card-flavor">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              rutrum ex vel felis consectetur, ac bibendum massa cursus.
+              Vestibulum urna dui, varius consequat gravida a, porta vitae ex.
+              Nunc sed nibh in sapien convallis ornare sit amet sed ante. Nam
+              quis nisl in est tincidunt egestas.
+            </p>
+            <div class="card-icons">
+              <img src="icons/eye-plus-outline.svg" alt="view project icon " />
+              <img src="icons/share.svg" alt="share project icon" />
+              <img src="icons/star-plus-outline.svg" alt="star project icon" />
+            </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Project 5</p>
+            <p class="card-flavor">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              rutrum ex vel felis consectetur, ac bibendum massa cursus.
+              Vestibulum urna dui, varius consequat gravida a, porta vitae ex.
+              Nunc sed nibh in sapien convallis ornare sit amet sed ante. Nam
+              quis nisl in est tincidunt egestas.
+            </p>
+            <div class="card-icons">
+              <img src="icons/eye-plus-outline.svg" alt="view project icon " />
+              <img src="icons/share.svg" alt="share project icon" />
+              <img src="icons/star-plus-outline.svg" alt="star project icon" />
+            </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Project 6</p>
+            <p class="card-flavor">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              rutrum ex vel felis consectetur, ac bibendum massa cursus.
+              Vestibulum urna dui, varius consequat gravida a, porta vitae ex.
+              Nunc sed nibh in sapien convallis ornare sit amet sed ante. Nam
+              quis nisl in est tincidunt egestas.
+            </p>
+            <div class="card-icons">
+              <img src="icons/eye-plus-outline.svg" alt="view project icon " />
+              <img src="icons/share.svg" alt="share project icon" />
+              <img src="icons/star-plus-outline.svg" alt="star project icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="announcements">
+        <p class="title-container">Announcements</p>
+        <div class="announcement-card">
+          <p class="announcement-title">Announcement 1</p>
+          <p class="announcement-flavor">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            rutrum ex vel felis consectetur, ac bibendum massa cursus.
+          </p>
+          <p class="announcement-title">Announcement 2</p>
+          <p class="announcement-flavor">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            rutrum ex vel felis consectetur, ac bibendum massa cursus.
+          </p>
+          <p class="announcement-title">Announcement 3</p>
+          <p class="announcement-flavor">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            rutrum ex vel felis consectetur, ac bibendum massa cursus.
+          </p>
+        </div>
+      </div>
+      <div class="trending">
+        <p class="title-container">Trending</p>
+        <div class="trending-card">
+          <div class="trending-profile">
+            <div class="avatar-placeholder">
+              U
+            </div>
+            <div class="trending-card-flavor">
+              <p class="trending-profile-name">User 1</p>
+              <p class="trending-profile-flavor">Comment to Project 1</p>
+            </div>
+          </div>
+          <div class="trending-profile">
+            <div class="avatar-placeholder">
+              T
+            </div>
+            <div class="trending-card-flavor">
+              <p class="trending-profile-name">User 2</p>
+              <p class="trending-profile-flavor">Comment to Project 2</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
